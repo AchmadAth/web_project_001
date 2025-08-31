@@ -1,6 +1,34 @@
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Mobile menu toggle functionality
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileSidebar = document.getElementById('mobileSidebar');
+    
+    if (mobileMenuToggle && mobileSidebar) {
+        mobileMenuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileSidebar.classList.toggle('active');
+        });
+        
+        // Close sidebar when clicking on nav links
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenuToggle.classList.remove('active');
+                mobileSidebar.classList.remove('active');
+            });
+        });
+        
+        // Close sidebar when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileSidebar.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileMenuToggle.classList.remove('active');
+                mobileSidebar.classList.remove('active');
+            }
+        });
+    }
+    
     // Auto slider click handler
     const autoSlides = document.querySelectorAll('.auto-slide');
     autoSlides.forEach(slide => {
@@ -149,17 +177,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Header scroll effect
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('.header');
-        if (window.scrollY > 100) {
-            header.style.background = 'rgba(0, 51, 102, 0.95)';
-            header.style.backdropFilter = 'blur(10px)';
-        } else {
-            header.style.background = '#003366';
-            header.style.backdropFilter = 'none';
-        }
-    });
     
     // Car cards animation on scroll
     const observerOptions = {
@@ -294,10 +311,15 @@ window.addEventListener('load', function() {
     }, 3000);
 });
 
-// Mobile menu toggle (if needed in future)
+// Mobile menu toggle function (legacy - now handled in DOMContentLoaded)
 function toggleMobileMenu() {
-    const nav = document.querySelector('.nav');
-    nav.classList.toggle('mobile-active');
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileSidebar = document.getElementById('mobileSidebar');
+    
+    if (mobileMenuToggle && mobileSidebar) {
+        mobileMenuToggle.classList.toggle('active');
+        mobileSidebar.classList.toggle('active');
+    }
 }
 
 // Contact form validation

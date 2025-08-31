@@ -13,7 +13,7 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Hyundai Andalan Motors - Dealer Resmi Hyundai Jakarta">
     <meta property="og:description" content="Dealer resmi Hyundai dengan harga terbaru 2025. IONIQ 5, IONIQ 6, CRETA, TUCSON, PALISADE dan semua model Hyundai tersedia. Konsultasi gratis!">
-    <meta property="og:image" content="https://yourusername.github.io/web_project_001/images/og-image.jpg">
+    <meta property="og:image" content="https://yourusername.github.io/web_project_001/images/meta/og-image.jpg">
     <meta property="og:url" content="https://yourusername.github.io/web_project_001/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="id_ID">
@@ -22,7 +22,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Hyundai Andalan Motors - Dealer Resmi Hyundai Jakarta">
     <meta name="twitter:description" content="Dealer resmi Hyundai dengan harga terbaru 2025. Konsultasi gratis dan test drive tersedia.">
-    <meta name="twitter:image" content="https://yourusername.github.io/web_project_001/images/twitter-card.jpg">
+    <meta name="twitter:image" content="https://yourusername.github.io/web_project_001/images/meta/twitter-card.jpg">
     
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
@@ -92,16 +92,26 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="https://via.placeholder.com/150x50/003366/white?text=HYUNDAI" alt="Hyundai Logo">
+                <img src="images/logo/hyundai-logo.png" alt="Hyundai Logo">
                 <span>ANDALAN MOTORS</span>
             </div>
-            <nav class="nav">
+            
+            <!-- Mobile menu toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Desktop navigation -->
+            <nav class="nav desktop-nav">
                 <a href="#home">Beranda</a>
                 <a href="#cars">Mobil</a>
                 <a href="#gallery">Galeri</a>
                 <a href="#contact">Kontak</a>
             </nav>
-            <div class="header-contact">
+            
+            <div class="header-contact desktop-contact">
                 <a href="tel:081250506767" class="phone-btn">
                     <i class="fas fa-phone"></i> 0812 5050 6767
                 </a>
@@ -110,11 +120,32 @@
                 </a>
             </div>
         </div>
+        
+        <!-- Mobile sidebar -->
+        <div class="mobile-sidebar" id="mobileSidebar">
+            <div class="mobile-sidebar-content">
+                <nav class="mobile-nav">
+                    <a href="#home">Beranda</a>
+                    <a href="#cars">Mobil</a>
+                    <a href="#gallery">Galeri</a>
+                    <a href="#contact">Kontak</a>
+                </nav>
+                
+                <div class="mobile-contact">
+                    <a href="tel:081250506767" class="mobile-phone-btn">
+                        <i class="fas fa-phone"></i> 0812 5050 6767
+                    </a>
+                    <a href="https://wa.me/6281250506767" class="mobile-whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
+        <div class="hero-content" style="padding-left: 50px;">
             <h1>Dealer Resmi Hyundai</h1>
             <h2>ANDALAN MOTORS</h2>
             <p>Temukan kendaraan Hyundai terbaru dengan teknologi canggih dan desain yang memukau</p>
@@ -124,7 +155,7 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="https://via.placeholder.com/600x400/f0f0f0/666?text=Hyundai+Car" alt="Hyundai Car">
+            <img src="images/hero/hero-car-main.jpg" alt="Hyundai Car">
         </div>
     </section>
 
@@ -136,7 +167,7 @@
                 <div class="auto-slider" id="autoSlider">
                     <!-- Signature -->
                     <div class="auto-slide" data-car="signature">
-                        <img src="https://via.placeholder.com/200x120/e6f3ff/003366?text=Signature" alt="Hyundai Signature">
+                        <img src="images/cars/signature-slider.jpg" alt="Hyundai Signature">
                         <div class="auto-slide-info">
                             <h3>Signature</h3>
                             <div class="price-range">Mulai Rp 1,1 M</div>
@@ -146,7 +177,7 @@
                     
                     <!-- KONA Electric -->
                     <div class="auto-slide" data-car="kona-electric">
-                        <img src="https://via.placeholder.com/200x120/e8f5e8/006600?text=KONA+Electric" alt="KONA Electric">
+                        <img src="images/cars/kona-electric-slider.jpg" alt="KONA Electric">
                         <div class="auto-slide-info">
                             <h3>KONA Electric</h3>
                             <div class="price-range">Mulai Rp 516 Juta</div>
@@ -156,7 +187,7 @@
                     
                     <!-- IONIQ 6 -->
                     <div class="auto-slide" data-car="ioniq6">
-                        <img src="https://via.placeholder.com/200x120/e8f5e8/006600?text=IONIQ+6" alt="IONIQ 6">
+                        <img src="images/cars/ioniq6-slidder.jpg" alt="IONIQ 6">
                         <div class="auto-slide-info">
                             <h3>IONIQ 6</h3>
                             <div class="price-range">Mulai Rp 1,2 M</div>
@@ -166,7 +197,7 @@
                     
                     <!-- IONIQ 5 -->
                     <div class="auto-slide" data-car="ioniq5">
-                        <img src="https://via.placeholder.com/200x120/e8f5e8/006600?text=IONIQ+5" alt="IONIQ 5">
+                        <img src="images/cars/ioniq-slider.jpg" alt="IONIQ 5">
                         <div class="auto-slide-info">
                             <h3>IONIQ 5</h3>
                             <div class="price-range">Mulai Rp 735 Juta</div>
@@ -176,7 +207,7 @@
                     
                     <!-- New CRETA -->
                     <div class="auto-slide" data-car="creta">
-                        <img src="https://via.placeholder.com/200x120/fff5e6/cc6600?text=New+CRETA" alt="New CRETA">
+                        <img src="images/cars/new-creta-slider.jpg" alt="New CRETA">
                         <div class="auto-slide-info">
                             <h3>New CRETA</h3>
                             <div class="price-range">Mulai Rp 299 Juta</div>
@@ -186,7 +217,7 @@
                     
                     <!-- New TUCSON -->
                     <div class="auto-slide" data-car="tucson">
-                        <img src="https://via.placeholder.com/200x120/fff5e6/cc6600?text=New+TUCSON" alt="New TUCSON">
+                        <img src="images/cars/new-tucson-slider.jpg" alt="New TUCSON">
                         <div class="auto-slide-info">
                             <h3>New TUCSON</h3>
                             <div class="price-range">Mulai Rp 652 Juta</div>
@@ -196,7 +227,7 @@
                     
                     <!-- STARGAZER -->
                     <div class="auto-slide" data-car="stargazer">
-                        <img src="https://via.placeholder.com/200x120/f0f0f0/666?text=STARGAZER" alt="STARGAZER">
+                        <img src="images/cars/stargazer-slider.jpg" alt="STARGAZER">
                         <div class="auto-slide-info">
                             <h3>STARGAZER</h3>
                             <div class="price-range">Mulai Rp 258 Juta</div>
@@ -206,7 +237,7 @@
                     
                     <!-- STARIA -->
                     <div class="auto-slide" data-car="staria">
-                        <img src="https://via.placeholder.com/200x120/f0f0f0/666?text=STARIA" alt="STARIA">
+                        <img src="images/cars/staria-slider.jpg" alt="STARIA">
                         <div class="auto-slide-info">
                             <h3>STARIA</h3>
                             <div class="price-range">Mulai Rp 934 Juta</div>
@@ -216,7 +247,7 @@
                     
                     <!-- New PALISADE -->
                     <div class="auto-slide" data-car="palisade">
-                        <img src="https://via.placeholder.com/200x120/fff5e6/cc6600?text=New+PALISADE" alt="New PALISADE">
+                        <img src="images/cars/new-palisade-slider.jpg" alt="New PALISADE">
                         <div class="auto-slide-info">
                             <h3>New PALISADE</h3>
                             <div class="price-range">Mulai Rp 1,1 M</div>
@@ -226,7 +257,7 @@
                     
                     <!-- New SANTA FE -->
                     <div class="auto-slide" data-car="santa-fe">
-                        <img src="https://via.placeholder.com/200x120/fff5e6/cc6600?text=New+SANTA+FE" alt="New SANTA FE">
+                        <img src="images/cars/new-santa-fe-slider.jpg" alt="New SANTA FE">
                         <div class="auto-slide-info">
                             <h3>New SANTA FE</h3>
                             <div class="price-range">Mulai Rp 724 Juta</div>
@@ -236,7 +267,7 @@
                     
                     <!-- Duplicate slides for seamless loop -->
                     <div class="auto-slide" data-car="signature">
-                        <img src="https://via.placeholder.com/200x120/e6f3ff/003366?text=Signature" alt="Hyundai Signature">
+                        <img src="images/cars/signature-slider.jpg" alt="Hyundai Signature">
                         <div class="auto-slide-info">
                             <h3>Signature</h3>
                             <div class="price-range">Mulai Rp 1,1 M</div>
@@ -245,7 +276,7 @@
                     </div>
                     
                     <div class="auto-slide" data-car="kona-electric">
-                        <img src="https://via.placeholder.com/200x120/e8f5e8/006600?text=KONA+Electric" alt="KONA Electric">
+                        <img src="images/cars/kona-electric-slider.jpg" alt="KONA Electric">
                         <div class="auto-slide-info">
                             <h3>KONA Electric</h3>
                             <div class="price-range">Mulai Rp 516 Juta</div>
@@ -254,7 +285,7 @@
                     </div>
                     
                     <div class="auto-slide" data-car="ioniq6">
-                        <img src="https://via.placeholder.com/200x120/e8f5e8/006600?text=IONIQ+6" alt="IONIQ 6">
+                        <img src="images/cars/ioniq6-slidder.jpg" alt="IONIQ 6">
                         <div class="auto-slide-info">
                             <h3>IONIQ 6</h3>
                             <div class="price-range">Mulai Rp 1,2 M</div>
@@ -275,7 +306,7 @@
                     <!-- Premium Cars -->
                     <div class="car-card premium">
                         <div class="car-badge">PREMIUM</div>
-                        <img src="https://via.placeholder.com/300x200/e6f3ff/003366?text=Signature" alt="Hyundai Signature">
+                        <img src="images/cars/signature-2025.jpg" alt="Hyundai Signature">
                         <div class="car-info">
                             <h3>Signature 2.5 T-GDI HEV</h3>
                             <div class="price">Rp 1.105.000.000</div>
@@ -289,7 +320,7 @@
                     <!-- KONA Electric -->
                     <div class="car-card electric">
                         <div class="car-badge">LISTRIK</div>
-                        <img src="https://via.placeholder.com/300x200/e8f5e8/006600?text=KONA+Electric" alt="KONA Electric">
+                        <img src="images/cars/kona-electric-2025.jpg" alt="KONA Electric">
                         <div class="car-info">
                             <h3>The all-new KONA Electric</h3>
                             <div class="variants">
@@ -305,7 +336,7 @@
                     <!-- IONIQ 6 -->
                     <div class="car-card electric">
                         <div class="car-badge">LISTRIK</div>
-                        <img src="https://via.placeholder.com/300x200/e8f5e8/006600?text=IONIQ+6" alt="IONIQ 6">
+                        <img src="images/cars/Ioniq6-2025.jpg" alt="IONIQ 6">
                         <div class="car-info">
                             <h3>IONIQ 6</h3>
                             <div class="variants">
@@ -318,7 +349,7 @@
                     <!-- IONIQ 5 -->
                     <div class="car-card electric">
                         <div class="car-badge">LISTRIK</div>
-                        <img src="https://via.placeholder.com/300x200/e8f5e8/006600?text=IONIQ+5" alt="IONIQ 5">
+                        <img src="images/cars/ioniq5-2025.jpg" alt="IONIQ 5">
                         <div class="car-info">
                             <h3>IONIQ 5</h3>
                             <div class="variants">
@@ -335,7 +366,7 @@
                     <!-- New CRETA -->
                     <div class="car-card new">
                         <div class="car-badge">BARU</div>
-                        <img src="https://via.placeholder.com/300x200/fff5e6/cc6600?text=New+CRETA" alt="New CRETA">
+                        <img src="images/cars/new-creta-2025.jpg" alt="New CRETA">
                         <div class="car-info">
                             <h3>New CRETA</h3>
                             <div class="variants">
@@ -353,7 +384,7 @@
                     <!-- New TUCSON -->
                     <div class="car-card new">
                         <div class="car-badge">BARU</div>
-                        <img src="https://via.placeholder.com/300x200/fff5e6/cc6600?text=New+TUCSON" alt="New TUCSON">
+                        <img src="images/cars/new-tucson-2025.jpg" alt="New TUCSON">
                         <div class="car-info">
                             <h3>New TUCSON</h3>
                             <div class="variants">
@@ -365,7 +396,7 @@
 
                     <!-- STARGAZER -->
                     <div class="car-card">
-                        <img src="https://via.placeholder.com/300x200/f0f0f0/666?text=STARGAZER" alt="STARGAZER">
+                        <img src="images/cars/stargazer-2025.jpg" alt="STARGAZER">
                         <div class="car-info">
                             <h3>STARGAZER</h3>
                             <div class="variants">
@@ -383,7 +414,7 @@
 
                     <!-- STARIA -->
                     <div class="car-card">
-                        <img src="https://via.placeholder.com/300x200/f0f0f0/666?text=STARIA" alt="STARIA">
+                        <img src="images/cars/staria-2025.jpg" alt="STARIA">
                         <div class="car-info">
                             <h3>STARIA</h3>
                             <div class="variants">
@@ -396,7 +427,7 @@
                     <!-- New PALISADE -->
                     <div class="car-card new">
                         <div class="car-badge">BARU</div>
-                        <img src="https://via.placeholder.com/300x200/fff5e6/cc6600?text=New+PALISADE" alt="New PALISADE">
+                        <img src="images/cars/new-palisade-2025.jpg" alt="New PALISADE">
                         <div class="car-info">
                             <h3>The all-new PALISADE</h3>
                             <div class="variants">
@@ -410,7 +441,7 @@
                     <!-- New SANTA FE -->
                     <div class="car-card new">
                         <div class="car-badge">BARU</div>
-                        <img src="https://via.placeholder.com/300x200/fff5e6/cc6600?text=New+SANTA+FE" alt="New SANTA FE">
+                        <img src="images/cars/new-santa-fe-2025.jpg" alt="New SANTA FE">
                         <div class="car-info">
                             <h3>The all-new SANTA FE</h3>
                             <div class="variants">
@@ -473,42 +504,42 @@
             <p>Dokumentasi kepuasan pelanggan kami</p>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/300x300/e6f3ff/003366?text=Serah+Terima+1" alt="Serah Terima 1">
+                    <img src="images/gallery/serah-terima-1.jpeg" alt="Serah Terima 1">
                     <div class="gallery-overlay">
                         <h4>Pak Ahmad - IONIQ 5</h4>
                         <p>Jakarta Selatan</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/300x300/e6f3ff/003366?text=Serah+Terima+2" alt="Serah Terima 2">
+                    <img src="images/gallery/serah-terima-2.jpeg" alt="Serah Terima 2">
                     <div class="gallery-overlay">
                         <h4>Bu Sari - CRETA</h4>
                         <p>Tangerang</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/300x300/e6f3ff/003366?text=Serah+Terima+3" alt="Serah Terima 3">
+                    <img src="images/gallery/serah-terima-3.jpeg" alt="Serah Terima 3">
                     <div class="gallery-overlay">
                         <h4>Pak Budi - TUCSON</h4>
                         <p>Bekasi</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/300x300/e6f3ff/003366?text=Serah+Terima+4" alt="Serah Terima 4">
+                    <img src="images/gallery/serah-terima-4.jpeg" alt="Serah Terima 4">
                     <div class="gallery-overlay">
                         <h4>Bu Rina - STARGAZER</h4>
                         <p>Bogor</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/300x300/e6f3ff/003366?text=Serah+Terima+5" alt="Serah Terima 5">
+                    <img src="images/gallery/serah-terima-5.jpeg" alt="Serah Terima 5">
                     <div class="gallery-overlay">
                         <h4>Pak Deni - PALISADE</h4>
                         <p>Depok</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/300x300/e6f3ff/003366?text=Serah+Terima+6" alt="Serah Terima 6">
+                    <img src="images/gallery/serah-terima-6.jpeg" alt="Serah Terima 6">
                     <div class="gallery-overlay">
                         <h4>Bu Maya - SANTA FE</h4>
                         <p>Jakarta Barat</p>
